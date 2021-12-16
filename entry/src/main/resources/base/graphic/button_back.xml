@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<state-container
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:shape = "rectangle">
+        <item ohos:state="component_state_hovered"
+              ohos:element="$media:logo_instagram"
+        />
+
+</state-container>

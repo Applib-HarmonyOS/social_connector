@@ -3,7 +3,6 @@
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
     ohos:shape = "rectangle">
         <item ohos:state="component_state_hovered"
-              ohos:element="$media:logo_instagram"
         />
 
 </state-container>

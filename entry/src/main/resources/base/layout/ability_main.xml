@@ -7,51 +7,38 @@
     ohos:alignment="center"
     ohos:orientation="horizontal"
     ohos:background_element="#000000">
-    <de.hdodenhof.circleimageview.CircleImageView
-        ohos:id="$+id:tempciv"
-        ohos:height="80vp"
-        ohos:width="80vp"
-        ohos:image_src="$media:logo_instagram"
+
+    <Image
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:image_src="$media:facebook"
+        ohos:padding="10vp"
         ohos:clickable="true"
-        ohos:orientation="vertical"
-        ohos:layout_alignment="center"
-        ohos:top_padding="10vp"
-        ohos:left_margin="50vp"
-        app:civ_border_width="5vp"
-        app:civ_bg_color="#e95950"
+        ohos:id="$+id:facebook"
         />
-    <de.hdodenhof.circleimageview.CircleImageView
-        ohos:id="$+id:tempciv2"
-        ohos:height="80vp"
-        ohos:width="80vp"
-        ohos:image_src="$media:logo_google"
+    <Image
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:image_src="$media:whatsapp"
+        ohos:padding="10vp"
         ohos:clickable="true"
-        ohos:orientation="vertical"
-        ohos:layout_alignment="center"
-        ohos:top_padding="10vp"
-        app:civ_border_width="5vp"
-        app:civ_color="#dd4b39"
+        ohos:id="$+id:whatsapp"
         />
-    <de.hdodenhof.circleimageview.CircleImageView
-        ohos:id="$+id:tempciv3"
-        ohos:height="80vp"
-        ohos:width="80vp"
-        ohos:image_src="$media:logo_linkedin"
-        ohos:orientation="vertical"
-        ohos:layout_alignment="center"
-        ohos:top_padding="10vp"
-        app:civ_border_width="5vp"
-        app:civ_bg_color="#007bb5"/>
-    <de.hdodenhof.circleimageview.CircleImageView
-        ohos:id="$+id:tempciv4"
-        ohos:height="80vp"
-        ohos:width="80vp"
-        ohos:image_src="$media:logo_facebook"
-        ohos:orientation="vertical"
-        ohos:layout_alignment="center"
-        ohos:right_margin="50vp"
-        ohos:top_padding="10vp"
-        app:civ_border_width="5vp"
-        app:civ_bg_color="#3b5998"/>
+    <Image
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:image_src="$media:LinkedIN"
+        ohos:padding="10vp"
+        ohos:clickable="true"
+        ohos:id="$+id:linkedin"
+        />
+    <Image
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:image_src="$media:Github"
+        ohos:padding="10vp"
+        ohos:clickable="true"
+        ohos:id="$+id:github"
+        />
 
 </DirectionalLayout>

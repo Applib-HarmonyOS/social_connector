@@ -22,38 +22,8 @@ public class MainAbilitySlice extends AbilitySlice {
         super.onStart(intent);
         super.setUIContent(ResourceTable.Layout_ability_main);
 
-        Image facebook = (Image) findComponentById(ResourceTable.Id_facebook);
-        Image whatsapp = (Image) findComponentById(ResourceTable.Id_whatsapp);
-        Image linkedin = (Image) findComponentById(ResourceTable.Id_linkedin);
-        Image github   = (Image) findComponentById(ResourceTable.Id_github);
+        SocailConnect s = (SocailConnect) findComponentById(ResourceTable.Id_image1);
 
-        SocailConnect ob= new SocailConnect();
-
-
-        facebook.setClickedListener(new Component.ClickedListener() {
-            @Override
-            public void onClick(Component component) {
-                ob.onClick(facebook);
-            }
-        });
-        whatsapp.setClickedListener(new Component.ClickedListener() {
-            @Override
-            public void onClick(Component component) {
-                ob.onClick(whatsapp);
-            }
-        });
-        linkedin.setClickedListener(new Component.ClickedListener() {
-            @Override
-            public void onClick(Component component) {
-                ob.onClick(linkedin);
-            }
-        });
-        github.setClickedListener(new Component.ClickedListener() {
-            @Override
-            public void onClick(Component component) {
-                ob.onClick(github);
-            }
-        });
     }
 
     @Override

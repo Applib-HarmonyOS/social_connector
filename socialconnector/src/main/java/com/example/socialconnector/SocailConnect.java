@@ -1,14 +1,10 @@
 package com.example.socialconnector;
 
-import ohos.aafwk.ability.AbilityForm;
-import ohos.aafwk.ability.OnClickListener;
-import ohos.aafwk.ability.ViewsStatus;
+
 import ohos.agp.animation.AnimatorProperty;
 import ohos.agp.components.AttrSet;
-import ohos.agp.components.DirectionalLayout;
+import ohos.agp.components.Component;
 import ohos.agp.components.Image;
-import ohos.agp.render.opengl.Utils;
-import ohos.agp.render.render3d.Component;
 import ohos.app.Context;
 import ohos.global.resource.NotExistException;
 import ohos.global.resource.Resource;
@@ -16,12 +12,11 @@ import ohos.global.resource.ResourceManager;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 import ohos.media.image.PixelMap;
-
 import java.io.IOException;
 import java.util.Optional;
 
 
-public class SocailConnect extends Image {
+public class SocailConnect extends Image implements Component.ClickedListener {
 
     private static final String TAG = SocailConnect.class.getSimpleName();
 
@@ -35,6 +30,7 @@ public class SocailConnect extends Image {
     private int imageType = 0;
 
     private Optional<PixelMap> pixelMapping;
+    private Component component;
 
     public SocailConnect(Context context) {
         super(context);
@@ -43,9 +39,11 @@ public class SocailConnect extends Image {
     public SocailConnect(Context context, AttrSet attrSet) {
         super(context, attrSet);
         initAttr(attrSet);
+        setClickedListener(this);
     }
 
     private void initAttr(AttrSet attrSet) {
+
         checkImagetype();
     }
 
@@ -89,4 +87,11 @@ public class SocailConnect extends Image {
     }
 
 
+    @Override
+    public void onClick(Component component) {
+        this.component = component;
+        AnimatorProperty animatorProperty = component.createAnimatorProperty();
+        animatorProperty.rotate(360).setDelay(500).setDuration(1500).setLoopedCount(2);
+        animatorProperty.start();
+    }
 }

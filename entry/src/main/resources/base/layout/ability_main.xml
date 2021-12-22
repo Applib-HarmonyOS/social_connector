@@ -12,18 +12,27 @@
         ohos:height="match_content"
         ohos:width="match_content"
         ohos:id="$+id:image1"
-        ohos:image_src="$media:facebook"/>
-<!--    <com.example.socialconnector.SocailConnect-->
-<!--        ohos:height="match_content"-->
-<!--        ohos:width="match_content"-->
-<!--        ohos:image_src="$media:LinkedIN"/>-->
-<!--    <com.example.socialconnector.SocailConnect-->
-<!--        ohos:height="match_content"-->
-<!--        ohos:width="match_content"-->
-<!--        ohos:image_src="$media:Twitter"/>-->
-<!--    <com.example.socialconnector.SocailConnect-->
-<!--        ohos:height="match_content"-->
-<!--        ohos:width="match_content"-->
-<!--        ohos:image_src="$media:whatsapp"/>-->
+        ohos:padding="10vp"
+        ohos:image_src="$media:facebook"
+        ohos:clickable="true"/>
+
+    <com.example.socialconnector.SocailConnect
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:padding="10vp"
+        ohos:image_src="$media:LinkedIN"
+        ohos:clickable="true"/>
+    <com.example.socialconnector.SocailConnect
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:padding="10vp"
+        ohos:image_src="$media:Twitter"
+        ohos:clickable="true"/>
+    <com.example.socialconnector.SocailConnect
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:padding="10vp"
+        ohos:image_src="$media:whatsapp"
+        ohos:clickable="true"/>
 
 </DirectionalLayout>

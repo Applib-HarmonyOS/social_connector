@@ -1,5 +1,6 @@
 package com.example.socialconnector;
 
+import ohos.agp.components.AttrSet;
 import ohos.global.resource.Resource;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
@@ -21,7 +22,7 @@ public class Util {
 
     private static final int HILOG_DOMAIN = 0xD000F00;
 
-    private static final HiLogLabel LABEL = new HiLogLabel(HILOG_TYPE, HILOG_DOMAIN, "[Utils]");
+    private static final HiLogLabel LABEL = new HiLogLabel(HILOG_TYPE, HILOG_DOMAIN, "[Util]");
 
     private Util() {
     }

@@ -9,7 +9,7 @@ An HMOS library for creating social connection through icons
 
 Screenshot
 ----------
-![screenshot](screenshot/screen.png)
+![screenshot](screenshot.jpeg)
 
 ## How to use
 

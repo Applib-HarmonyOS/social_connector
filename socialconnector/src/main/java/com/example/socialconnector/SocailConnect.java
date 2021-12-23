@@ -1,6 +1,8 @@
 package com.example.socialconnector;
 
 
+import ohos.aafwk.content.Intent;
+import ohos.aafwk.content.Operation;
 import ohos.agp.animation.AnimatorProperty;
 import ohos.agp.components.AttrSet;
 import ohos.agp.components.Component;
@@ -12,11 +14,15 @@ import ohos.global.resource.ResourceManager;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 import ohos.media.image.PixelMap;
+import ohos.utils.net.Uri;
+
 import java.io.IOException;
 import java.util.Optional;
+import java.util.Timer;
+import java.util.TimerTask;
 
 
-public class SocailConnect extends Image implements Component.ClickedListener {
+public class SocailConnect extends Image implements Component.ClickedListener, ohos.agp.render.render3d.Component {
 
     private static final String TAG = SocailConnect.class.getSimpleName();
 
@@ -28,6 +34,8 @@ public class SocailConnect extends Image implements Component.ClickedListener {
     private static final String DEFAULT_SOCIAL = "facebook";
 
     private int imageType = 0;
+
+    private Context d=null;
 
     private Optional<PixelMap> pixelMapping;
     private Component component;
@@ -90,8 +98,36 @@ public class SocailConnect extends Image implements Component.ClickedListener {
     @Override
     public void onClick(Component component) {
         this.component = component;
-        AnimatorProperty animatorProperty = component.createAnimatorProperty();
-        animatorProperty.rotate(360).setDelay(500).setDuration(1500).setLoopedCount(2);
-        animatorProperty.start();
+        Timer time = new Timer();
+
+        time.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                  launch();
+            }
+        },1500);
+            AnimatorProperty animatorProperty = component.createAnimatorProperty();
+            animatorProperty.rotate(360).setDelay(500).setDuration(1500).setLoopedCount(2);
+            animatorProperty.start();
+    }
+
+    public void launch()
+    {
+        Intent i = new Intent();
+        Uri uri = Uri.parse("https://www.google.co.in/");
+        Operation o = new Intent.OperationBuilder().withUri(uri).withAbilityName(component.getName()).build();
+        i.setOperation(o);
+
+        getC().startAbility(i,0);
+    }
+
+    public void setContext(Context c)
+    {
+        this.d=c;
+    }
+
+    public Context getC()
+    {
+        return d;
     }
 }

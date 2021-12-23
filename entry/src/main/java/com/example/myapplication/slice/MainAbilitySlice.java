@@ -24,6 +24,8 @@ public class MainAbilitySlice extends AbilitySlice {
 
         SocailConnect s = (SocailConnect) findComponentById(ResourceTable.Id_image1);
 
+        s.setContext(this);
+
     }
 
     @Override

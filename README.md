@@ -32,7 +32,7 @@ dependencies {
             testImplementation 'junit:junit:4.13'
 }
 ```
-III) For using SocialButton from a remote repository in separate application, add the below dependencies in entry/build.gradle file.
+III) For using socialconnector from a remote repository in separate application, add the below dependencies in entry/build.gradle file.
 ```
 dependencies {
         implementation 'dev.applibgroup:socialconnector:1.0.0'

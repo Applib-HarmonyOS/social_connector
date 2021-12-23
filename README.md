@@ -67,6 +67,8 @@ i) set image source  from library end. So, app developer has to set through xml 
 
 ii) And Also This Library is for this four icons only as of now
 
+iii) And also it will provide some animation effect when the user clicks on that button.
+
 
 ## License 
 This software is licensed under the Apache License V2.0

@@ -8,6 +8,7 @@ import ohos.agp.components.AttrSet;
 import ohos.agp.components.Component;
 import ohos.agp.components.Image;
 import ohos.app.Context;
+import ohos.bundle.AbilityInfo;
 import ohos.global.resource.NotExistException;
 import ohos.global.resource.Resource;
 import ohos.global.resource.ResourceManager;
@@ -35,7 +36,7 @@ public class SocailConnect extends Image implements Component.ClickedListener, o
 
     private int imageType = 0;
 
-    private Context d=null;
+    private Context d;
 
     private Optional<PixelMap> pixelMapping;
     private Component component;
@@ -113,12 +114,14 @@ public class SocailConnect extends Image implements Component.ClickedListener, o
 
     public void launch()
     {
-        Intent i = new Intent();
-        Uri uri = Uri.parse("https://www.google.co.in/");
-        Operation o = new Intent.OperationBuilder().withUri(uri).withAbilityName(component.getName()).build();
-        i.setOperation(o);
+        Intent intent = new Intent();
+        String URI = "https://appgallery.cloud.huawei.com/appDetail?pkgName=";
 
-        getC().startAbility(i,0);
+        Operation operation = new Intent.OperationBuilder()
+                .withUri(Uri.parse(URI + "com.enrique.apprater"))
+                .build();
+        intent.setOperation(operation);
+        getC().startAbility(intent, AbilityInfo.AbilityType.WEB.ordinal());
     }
 
     public void setContext(Context c)

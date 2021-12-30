@@ -34,7 +34,7 @@ public class SocailConnect extends Image implements Component.ClickedListener, o
 
     private Context d;
 
-    private final static int  imageType = 0;
+    private static final int  IMAGETYPE = 0;
 
     public SocailConnect(Context context) {
         super(context);
@@ -51,7 +51,7 @@ public class SocailConnect extends Image implements Component.ClickedListener, o
     }
 
     private void checkImagetype() {
-        switch (imageType) {
+        switch (IMAGETYPE) {
             case 0:
                  getPixelMapByResId(ResourceTable.Media_facebook);
                 break;

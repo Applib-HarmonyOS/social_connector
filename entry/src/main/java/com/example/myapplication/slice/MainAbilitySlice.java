@@ -23,7 +23,7 @@ import com.example.socialconnector.SocailConnect;
 
 
 /**
- * This is a SocialConnect Application
+ * {@summary This is valid java doc。}
  */
 public class MainAbilitySlice extends AbilitySlice {
 

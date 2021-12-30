@@ -20,7 +20,7 @@ package com.example.myapplication;
 import ohos.aafwk.ability.AbilityPackage;
 
 /**
- *  This is a SocialConnect Application
+ * {@summary This is valid java doc。}
  */
 public class MyApplication extends AbilityPackage {
     @Override

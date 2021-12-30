@@ -23,7 +23,7 @@ import com.example.myapplication.slice.MainAbilitySlice;
 
 
 /**
- *  This is a SocialConnect Application
+ * {@summary This is valid java doc。}
  */
 public class MainAbility extends Ability {
     @Override

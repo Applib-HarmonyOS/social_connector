@@ -1,0 +1,21 @@
+{
+  "strarray": [
+    {
+      "name": "Available_buttons",
+      "value": [
+        {
+          "value": "facebook"
+        },
+        {
+          "value": "linkedin"
+        },
+        {
+          "value": "twitter"
+        },
+        {
+          "value": "whatsapp"
+        }
+      ]
+    }
+  ]
+}

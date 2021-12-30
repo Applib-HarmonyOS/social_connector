@@ -32,14 +32,9 @@ public class SocailConnect extends Image implements Component.ClickedListener, o
     private static final HiLogLabel LABEL = new HiLogLabel(
             HiLog.LOG_APP, DOMAIN, TAG);
 
-    private static final String DEFAULT_SOCIAL = "facebook";
-
-    private int imageType = 0;
-
     private Context d;
 
-    private Optional<PixelMap> pixelMapping;
-    private Component component;
+    private final int  imageType = 0;
 
     public SocailConnect(Context context) {
         super(context);
@@ -47,16 +42,16 @@ public class SocailConnect extends Image implements Component.ClickedListener, o
 
     public SocailConnect(Context context, AttrSet attrSet) {
         super(context, attrSet);
-        initAttr(attrSet);
+        initAttr();
         setClickedListener(this);
     }
 
-    private void initAttr(AttrSet attrSet) {
-
+    private void initAttr() {
         checkImagetype();
     }
 
     private void checkImagetype() {
+        Optional<PixelMap> pixelMapping;
         switch (imageType) {
             case 0:
                 pixelMapping = getPixelMapByResId(ResourceTable.Media_facebook);
@@ -98,7 +93,6 @@ public class SocailConnect extends Image implements Component.ClickedListener, o
 
     @Override
     public void onClick(Component component) {
-        this.component = component;
         Timer time = new Timer();
 
         time.schedule(new TimerTask() {

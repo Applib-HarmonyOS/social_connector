@@ -1,6 +1,5 @@
 package com.example.socialconnector;
 
-import ohos.agp.components.AttrSet;
 import ohos.global.resource.Resource;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;

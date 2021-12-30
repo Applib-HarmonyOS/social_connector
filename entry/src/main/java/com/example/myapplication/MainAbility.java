@@ -17,10 +17,14 @@
 
 package com.example.myapplication;
 
-import com.example.myapplication.slice.MainAbilitySlice;
 import ohos.aafwk.ability.Ability;
 import ohos.aafwk.content.Intent;
+import com.example.myapplication.slice.MainAbilitySlice;
 
+
+/**
+ *  This is a SocialConnect Application
+ */
 public class MainAbility extends Ability {
     @Override
     public void onStart(Intent intent) {

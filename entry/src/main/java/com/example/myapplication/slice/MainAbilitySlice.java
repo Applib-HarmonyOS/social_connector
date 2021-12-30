@@ -16,12 +16,15 @@
 
 package com.example.myapplication.slice;
 
-import com.example.myapplication.ResourceTable;
-import com.example.socialconnector.SocailConnect;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
+import com.example.myapplication.ResourceTable;
+import com.example.socialconnector.SocailConnect;
 
 
+/**
+ * This is a SocialConnect Application
+ */
 public class MainAbilitySlice extends AbilitySlice {
 
     @Override

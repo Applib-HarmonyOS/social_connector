@@ -19,6 +19,9 @@ package com.example.myapplication;
 
 import ohos.aafwk.ability.AbilityPackage;
 
+/**
+ *  This is a SocialConnect Application
+ */
 public class MyApplication extends AbilityPackage {
     @Override
     public void onInitialize() {

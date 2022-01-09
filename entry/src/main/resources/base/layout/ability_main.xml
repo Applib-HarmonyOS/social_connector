@@ -20,18 +20,21 @@
         ohos:height="match_content"
         ohos:width="match_content"
         ohos:padding="10vp"
+        ohos:id="$+id:image2"
         ohos:image_src="$media:LinkedIN"
         ohos:clickable="true"/>
     <com.example.socialconnector.SocailConnect
         ohos:height="match_content"
         ohos:width="match_content"
         ohos:padding="10vp"
+        ohos:id="$+id:image3"
         ohos:image_src="$media:Twitter"
         ohos:clickable="true"/>
     <com.example.socialconnector.SocailConnect
         ohos:height="match_content"
         ohos:width="match_content"
         ohos:padding="10vp"
+        ohos:id="$+id:image4"
         ohos:image_src="$media:whatsapp"
         ohos:clickable="true"/>
 

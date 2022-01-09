@@ -101,17 +101,17 @@ public class SocailConnect extends Image implements Component.ClickedListener, o
             }
         },1500);
             AnimatorProperty animatorProperty = component.createAnimatorProperty();
-            animatorProperty.rotate(360).setDelay(500).setDuration(1500).setLoopedCount(2);
+            animatorProperty.rotate(360).setDelay(500).setDuration(1500).setLoopedCount(2).setTarget(component);
             animatorProperty.start();
     }
 
     public void launch()
     {
         Intent intent = new Intent();
-        String URI = "https://appgallery.cloud.huawei.com/appDetail?pkgName=";
+        String uri = "https://appgallery.cloud.huawei.com/appDetail?pkgName=";
 
         Operation operation = new Intent.OperationBuilder()
-                .withUri(Uri.parse(URI + "com.enrique.apprater"))
+                .withUri(Uri.parse(uri + "com.enrique.apprater"))
                 .build();
         intent.setOperation(operation);
         getC().startAbility(intent, AbilityInfo.AbilityType.WEB.ordinal());

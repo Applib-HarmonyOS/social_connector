@@ -23,7 +23,7 @@ import com.example.myapplication.slice.MainAbilitySlice;
 
 
 /**
- * {@summary This is valid java doc。}
+ * @return 42
  */
 public class MainAbility extends Ability {
     @Override

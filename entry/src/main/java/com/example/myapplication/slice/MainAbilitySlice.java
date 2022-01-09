@@ -23,7 +23,7 @@ import com.example.socialconnector.SocailConnect;
 
 
 /**
- * {@summary This is valid java doc。}
+ * @return 42
  */
 public class MainAbilitySlice extends AbilitySlice {
 
@@ -36,9 +36,9 @@ public class MainAbilitySlice extends AbilitySlice {
         s.setContext(this);
         SocailConnect s1 = (SocailConnect) findComponentById(ResourceTable.Id_image2);
         s1.setContext(this);
-        SocailConnect s2= (SocailConnect) findComponentById(ResourceTable.Id_image3);
+        SocailConnect s2 = (SocailConnect) findComponentById(ResourceTable.Id_image3);
         s2.setContext(this);
-        SocailConnect s3= (SocailConnect) findComponentById(ResourceTable.Id_image4);
+        SocailConnect s3 = (SocailConnect) findComponentById(ResourceTable.Id_image4);
         s3.setContext(this);
     }
 

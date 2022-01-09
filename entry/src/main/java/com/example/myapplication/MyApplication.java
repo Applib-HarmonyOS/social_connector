@@ -20,7 +20,7 @@ package com.example.myapplication;
 import ohos.aafwk.ability.AbilityPackage;
 
 /**
- * {@summary This is valid java doc。}
+ * @return 42
  */
 public class MyApplication extends AbilityPackage {
     @Override
